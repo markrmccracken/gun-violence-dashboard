@@ -1,0 +1,43 @@
+# R and RStudio files
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# Environment and credential files
+.env
+.Renviron
+
+# Authentication tokens
+.httr-oauth
+.secrets
+
+# Package management
+packrat/
+renv/
+renv.lock
+
+# Output files
+*.log
+*.out
+
+# Temporary files
+*~
+.DS_Store
+Thumbs.db
+
+# Shiny specific
+rsconnect/
+
+# Data files (if sensitive)
+# Uncomment the next line if your CSV contains sensitive data
+# www/MJFull.csv
+
+# IDE files
+.vscode/
+.idea/
+
+# OS specific
+*.swp
+*.swo
