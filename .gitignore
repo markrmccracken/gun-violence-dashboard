@@ -33,6 +33,7 @@ rsconnect/
 # Data files (if sensitive)
 # Uncomment the next line if your CSV contains sensitive data
 # www/MJFull.csv
+www/MJFull2025.csv
 
 # IDE files
 .vscode/
