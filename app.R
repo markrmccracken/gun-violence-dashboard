@@ -47,7 +47,7 @@ ui <- dashboardPage(
               fluidPage(
                 h1("Gun Violence and Mass Shootings in the United States", align = "center"),
                 h2(icon("home"), "About", align = "left"),
-                p("Gun Violence is a serious issue in the United States. For most of us, however, this issue feels at a distance as we are not
+                p("Gun Violence is a serious issue in the United States. For most of us, however, this issue feels distant as we are not
             exposed to it every day. The times when the issue rises to national attention is typically when there is a mass shooting. Mass 
             shootings are defined as events involving gun violence where four or more people were killed in indiscriminate rampages in a 
             public place (", a(href="https://www.motherjones.com/crime-justice/2012/08/what-is-a-mass-shooting/", target="_blank", "source"), "). 
