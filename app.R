@@ -175,7 +175,7 @@ ui <- dashboardPage(
                   selectInput("characteristic", label = h3("Shooter Characteristic"), 
                               choices = list("race"=1, "gender"=2, "age"=3, "mental health issues"=4,
                                              "fully- or semi- automatic weapon"=5, "legal weapon"=6, "location type"=7),
-                              selected=2),
+                              selected=1),
                   radioButtons("selectingVics", label=h3("Show by Fatalities or Total Victims"), 
                                choices=list("Total Victims [Fatalities + Injured]"=1, "Just Fatalities"=2), selected=1),
                   h3("Toggle Outlier"),
@@ -342,7 +342,10 @@ server <- function(input, output, session) {
       sep = "<br/>",
       paste0("<b>", data$case, "</b>"),
       paste0("<b>Date:</b> ", data$date),
-      paste0("<b>Total Victims:</b> ", data$ttl.victims, " (", data$fatalities, " Dead)")
+      paste0("<b>Total Victims:</b> ", data$ttl.victims, " (", data$fatalities, " Dead)"),
+      paste0("<b><a href='", data$one_source,"' target= _blank' rel='noopener noreferrer'>News Source for the Incident</a></b>"),
+      paste0("<b>Incident Details:</b> ", subData()$summary)
+      
     )
     
     leaflet() %>%
