@@ -117,7 +117,7 @@ ui <- dashboardPage(
                   p("The size of each incident represents the total victims, including fatalities and injured."),
                   p("Use the slider below to filter by year range."),
                   sliderInput("yearSlider", label=h4("Select Year(s)"), 
-                              min = 1982, max = 2024, value = c(1982, 2024), sep="")
+                              min = 1982, max = 2025, value = c(1982, 2025), sep="")
                 ),
                 box(
                   width = 9,
